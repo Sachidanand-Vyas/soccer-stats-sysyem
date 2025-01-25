@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello from JS!</h1>
+    <script>
+        // alert("2 bhai dono tbhahi!");
+        // console.log("teriii! bkt!");
+
+       // let x=7;
+    //    let x=prompt("enter a number")
+    //     console.log(x*x)
+
+       /// console.log("square of "+ x +" is "+(x*x))
+
+        //console.log(0o12/2)
+       // console.log(`square of ${x} is ${x*x}`)
+
+    //    let x=Number(prompt("enter num1 "))
+    //    let y=Number(prompt("enter num2 "))
+
+    //    z=x+y;
+
+    //     console.log(`the addition of ${x} and ${y}  is ${z} `)
+        
+        // for(let i=1;i<=30;i++) {
+            
+
+        //      if(i%3==0 && i%5==0){
+        //         console.log("fizz-buzz");
+        //     }
+        //    else if(i%3==0){
+        //         console.log("fizz");
+        //     }
+
+        //     else if(i%5==0){
+        //         console.log("buzz");
+        //     }
+
+
+        //     else{
+        //         console.log(i)
+        //     }
+        // }
+        // let n=5;
+        // for (let i = 1; i<=10; i++) {
+        //     console.log(n +"*"+ i+ "=" +n *i);
+                
+        // }Math.floor(Math.random() * 100 +1)
+        let guess=prompt("Guess a number ...(1-100){you have 5 attempts}")
+
+        let jackpot=67;
+        for(let i=0;i<5;i++){
+        
+        let guess=Number(prompt(`Guess a number ...(1-100){you ${5-i} have attempts}`));
+
+        if(jackpot===guess){
+            console.log("Appki selection ho gyi hai!");
+            break;
+        }
+        
+        else if(jackpot<guess){
+            console.log("guess less than this!");
+        }
+
+        else if(jackpot>guess){
+            console.log("guess greater than this");
+        }
+
+        if(i===4){
+            console.log("Aapka toh kat gya!!");
+        }
+    }
+    </script>
+</body>
+</html>
